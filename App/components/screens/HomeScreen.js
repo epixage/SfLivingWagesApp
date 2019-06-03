@@ -26,6 +26,17 @@ export default class HomeScreen extends React.Component {
             });
           }}
         />
+        <Text>About Screen</Text>
+        <Button
+          title = "Go to About"
+          onPress = {() => {
+            /* 2. Navigate to the About route with paras */
+            this.props.navigation.navigate('About', {
+              itemId: 72,
+              otherParam: 'Who am I',
+            });
+          }}
+        />
       </View>
     );
   }
