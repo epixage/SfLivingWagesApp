@@ -3,8 +3,10 @@ import { Button, View, Text } from 'react-native';
 import { createStackNavigator, createAppContainer } from 'react-navigation';
 
 export default class DetailScreen extends React.Component {
+	/*=====Change the navigation styling for this page=========*/
   static navigationOptions = {
     title: 'Details',
+    headerBackTitle: ''
   };
 
   render() {
