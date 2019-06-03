@@ -1,19 +1,11 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native';
+import { Button, View, Text } from 'react-native';
+import { createStackNavigator, createAppContainer } from 'react-navigation';
 
-export default class App extends React.Component { 
-   state = {
-      myState: 'kdjfa;lskdjf;laskdjfa;hdsf;sl dkvf;sdfjhasdlfasdkfja;slkdfjasldkfja;slkdfja;sldkfja;lskdfj;slakdfj;laskdfjal;skdfjal;sdkjhsdkfhasldkfhasdkfhsadkfjsa;ldkfjasdfhaskdjfhalskdjfhsakljdfhskdljfhsakldjfsakdfhlksadjhflkasdjfhaskjdfhkasjdfhlkasjdhflkjasdhflaksjdhflkasjdhflksdjhflkasjdhfklsajdhflkajefiuwehflksjadflkjsadfhlkasjhflkasjdhflkajsdhflkjashdflksajdhflkajsdhflkajsdhfklajsdfhlkajsdhfklajsdhflakjshfiurgldbvxzjcbvsfaliusdgviar;asdkhfpaiur;foisdhffjasldkfjlfsk'
+import NavigationStack from './App/components/stacks/NavigationStack';
 
-   }
-   updateState = () => this.setState({ myState: 'The state is updated'})
-   render() {
-      return (
-         <View>
-            <Text onPress = {this.updateState}>
-               {this.state.myState} 
-            </Text>
-         </View>
-      );
-   }
+export default class App extends React.Component {
+  render() {
+    return <NavigationStack />;
+  }
 }
