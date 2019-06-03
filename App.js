@@ -1,18 +1,21 @@
-import React from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native';
+import React, { Component } from 'react';
+import { StyleSheet, Text, View, Button, Image } from 'react-native';
+import {
+   createAppContainer,
+   createStackNavigator,
+   createBottomTabNavigator,
+   SafeAreaView,
+   createDrawerNavigator
+} from 'react-navigation';
 
-export default class App extends React.Component { 
-   state = {
-      myState: 'kdjfa;lskdjf;laskdjfa;hdsf;sl dkvf;sdfjhasdlfasdkfja;slkdfjasldkfja;slkdfja;sldkfja;lskdfj;slakdfj;laskdfjal;skdfjal;sdkjhsdkfhasldkfhasdkfhsadkfjsa;ldkfjasdfhaskdjfhalskdjfhsakljdfhskdljfhsakldjfsakdfhlksadjhflkasdjfhaskjdfhkasjdfhlkasjdhflkjasdhflaksjdhflkasjdhflksdjhflkasjdhfklsajdhflkajefiuwehflksjadflkjsadfhlkasjhflkasjdhflkajsdhflkjashdflksajdhflkajsdhflkajsdhfklajsdfhlkajsdhfklajsdhflakjshfiurgldbvxzjcbvsfaliusdgviar;asdkhfpaiur;foisdhffjasldkfjlfsk'
+import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 
-   }
-   updateState = () => this.setState({ myState: 'The state is updated'})
+export default class App extends Component { 
+
    render() {
       return (
-         <View>
-            <Text onPress = {this.updateState}>
-               {this.state.myState} 
-            </Text>
+         <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+            <Text>Hello World</Text>
          </View>
       );
    }
