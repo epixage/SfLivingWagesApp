@@ -1,22 +1,11 @@
-import React, { Component } from 'react';
-import { StyleSheet, Text, View, Button, Image } from 'react-native';
-import {
-   createAppContainer,
-   createStackNavigator,
-   createBottomTabNavigator,
-   SafeAreaView,
-   createDrawerNavigator
-} from 'react-navigation';
+import React from 'react';
+import { Button, View, Text } from 'react-native';
+import { createStackNavigator, createAppContainer } from 'react-navigation';
 
-import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
+import NavigationStack from './App/components/stacks/NavigationStack';
 
-export default class App extends Component { 
-
-   render() {
-      return (
-         <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-            <Text>Hello World</Text>
-         </View>
-      );
-   }
+export default class App extends React.Component {
+  render() {
+    return <NavigationStack />;
+  }
 }
