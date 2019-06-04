@@ -22,6 +22,9 @@ const header = {
 	headerTitle: <LogoHeader/>,
 	headerStyle: {
 		backgroundColor: '#d31623',
+		height: 70,
+		marginTop: 5,
+		marginBottom: 5
 	},
 };
 
@@ -44,8 +47,7 @@ const HomeStack = createStackNavigator(
 		defaultNavigationOptions: ({navigation}) => ({
 			headerTitle: <LogoHeader/>,
 			headerStyle: {
-				backgroundColor: '#d31623',
-				marginRight: 30
+				backgroundColor: '#d31623'
 			},
 			headerLeft: <NavigationDrawerStructure navigationProps={navigation}/>,
 		}),
@@ -60,8 +62,7 @@ const DetailStack = createStackNavigator(
 		defaultNavigationOptions: ({navigation}) => ({
 			headerTitle: <LogoHeader/>,
 			headerStyle: {
-				backgroundColor: '#d31623',
-				marginRight: 30
+				backgroundColor: '#d31623'
 			},
 			headerLeft: <NavigationDrawerStructure navigationProps={navigation} />
 		}),
