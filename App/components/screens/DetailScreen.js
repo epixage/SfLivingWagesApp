@@ -15,6 +15,13 @@ export default class DetailScreen extends React.Component {
     const itemId = navigation.getParam('itemId', 'NO-ID');
     const otherParam = navigation.getParam('otherParam', 'some default value');
 
+    /*==========Console logging in terminal how JSON.stringify works==========*/
+    // console.log("navigation is: ");
+    // console.log(navigation);
+    // console.log("===================================\n");
+    // console.log("After stringifying");
+    // console.log(JSON.stringify(navigation));
+
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
         <Text>Details Screen</Text>

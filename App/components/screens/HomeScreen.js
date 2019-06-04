@@ -2,15 +2,15 @@ import React from 'react';
 import { Button, View, Text } from 'react-native';
 import { createStackNavigator, createAppContainer } from 'react-navigation';
 
-import LogoHeader from '../stacks/LogoHeader';
+// import LogoHeader from '../stacks/LogoHeader';
 
 export default class HomeScreen extends React.Component {
   /*=====Change the navigation styling for this page=========*/
-  static navigationOptions = {
-    headerTitle: <LogoHeader/>,
-    headerStyle: {backgroundColor: '#d31623'},
-    headerBackTitle: ''
-  };
+  // static navigationOptions = {
+  //   headerTitle: <LogoHeader/>,
+  //   headerStyle: {backgroundColor: '#d31623'},
+  //   headerBackTitle: ''
+  // };
 
   render() {
     return (
