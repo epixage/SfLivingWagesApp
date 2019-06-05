@@ -7,9 +7,9 @@ import LogoHeader from '../stacks/LogoHeader';
 
 export const styles = StyleSheet.create({
 /*
-container style does not contain Platform.select so both ios and android will have the same styling
-container already has its own {braces} so for styling, you only need a single set of brace to hold it.
-Ex: <View style = {styles.container} />
+	container style does not contain Platform.select so both ios and android will have the same styling
+	container already has its own {braces} so for styling, you only need a single set of brace to hold it.
+	Ex: <View style = {styles.container} />
 */
 	container: { 
 		flex: 1, 
@@ -20,9 +20,9 @@ Ex: <View style = {styles.container} />
 
 export const bannerStyle = StyleSheet.create({ 
 /*
-logoHeaderImageStyle style both ios and android will have flex:1, but ios and android will have platform specific height:
-logoHeaderImageStyle already has its own {braces} so for styling, you only need a single set of brace to hold it.
-Ex: <View style = {bannerStyle.logoHeaderImageStyle} />
+	logoHeaderImageStyle style both ios and android will have flex:1, but ios and android will have platform specific height:
+	logoHeaderImageStyle already has its own {braces} so for styling, you only need a single set of brace to hold it.
+	Ex: <View style = {bannerStyle.logoHeaderImageStyle} />
 */
 	logoHeaderImageStyle: { 
 		/* non-platform specific styling */
@@ -49,9 +49,9 @@ Ex: <View style = {bannerStyle.logoHeaderImageStyle} />
 		}), 
 	}, 
 /*
-bannerHeaderStyle style on both ios and android will have the same background color, but the height of the banner will be different for both android and ios
-bannerHeaderStyle already has its own {braces} so for styling, you only need a single set of brace to hold it.
-Ex: <View style = {bannerStyle.bannerHeaderStyle} />
+	bannerHeaderStyle style on both ios and android will have the same background color, but the height of the banner will be different for both android and ios
+	bannerHeaderStyle already has its own {braces} so for styling, you only need a single set of brace to hold it.
+	Ex: <View style = {bannerStyle.bannerHeaderStyle} />
 */
 	bannerHeaderStyle: {
 		/* non-platform specific styling*/
