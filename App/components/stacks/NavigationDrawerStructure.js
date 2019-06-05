@@ -16,8 +16,10 @@ import {
 } from 'react-navigation';
 
 // Vector icon imports
-import { MaterialCommunityIcons } from '@expo/vector-icons';
+import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 
+// Component for the drawer logo on the upper left
+// Toggles the drawer to open and close
 export default class NavigationDrawerStructure extends Component {
   //Structure for the navigatin Drawer
   toggleDrawer = () => {
@@ -26,11 +28,17 @@ export default class NavigationDrawerStructure extends Component {
   };
 	render() {
    	return (
+   			{
+   				// Using MaterialCommunityIcons and grabbing the menu icon
+   			}
 			<MaterialCommunityIcons
 				name='menu'
-				size={40}
+				size={45}
 				color='#fff'
-				style={{ flex: 1 }}
+				style={{
+					flex: 1,
+					width: 40
+				}}
 				onPress={ this.toggleDrawer.bind(this) }
 			/>
 		);

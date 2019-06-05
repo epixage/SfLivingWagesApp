@@ -1,6 +1,12 @@
 import React from 'react';
-import { Button, View, Text } from 'react-native';
+import { Button, View, Text, ScrollableView } from 'react-native';
 import { createStackNavigator, createAppContainer } from 'react-navigation';
+
+const DrawerContentComponent = (props) => (
+  <ScrollableView>
+    
+  </ScrollableView>
+);
 
 export default class DetailScreen extends React.Component {
 	/*=====Change the navigation styling for this page=========*/

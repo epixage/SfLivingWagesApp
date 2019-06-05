@@ -9,9 +9,7 @@ export default class LogoHeader extends Component {
 				style={{ 
 					height: 55, 
 					width: 180, 
-					resizeMode: 'contain', 
-					marginBottom: 20,
-					marginTop: 10,
+					resizeMode: 'contain'
 				}}
 			/>
 		);
