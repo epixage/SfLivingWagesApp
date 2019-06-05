@@ -3,18 +3,21 @@ import { Button, View, Text } from 'react-native';
 import { createStackNavigator, createAppContainer } from 'react-navigation';
 
 import LogoHeader from '../stacks/LogoHeader';
+import { styles, bannerStyle } from '../style/styleSheet'
 
 export default class HomeScreen extends React.Component {
   /*=====Change the navigation styling for this page=========*/
   static navigationOptions = {
     headerTitle: <LogoHeader/>,
-    headerStyle: {backgroundColor: '#d31623'},
-    headerBackTitle: ''
+    headerStyle: bannerStyle.bannerHeaderStyle,
+    headerBackTitle: '',
+    justifyContent: 'center',
+    alignItems: 'center'
   };
 
   render() {
     return (
-      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <View style={styles.container}>
         <Text>Home Screen</Text>
         <Button
           title = "Go to Details"
