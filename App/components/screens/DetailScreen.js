@@ -1,8 +1,13 @@
 //Import Necessary Packges
 import React from 'react';
-import { Button, View, Text } from 'react-native';
+import { Button, View, Text, ScrollableView } from 'react-native';
 import { createStackNavigator, createAppContainer } from 'react-navigation';
 
+const DrawerContentComponent = (props) => (
+  <ScrollableView>
+    
+  </ScrollableView>
+);
 
 export default class DetailScreen extends React.Component {
 	/*=====Change the navigation styling for this page=========*/
@@ -16,6 +21,13 @@ export default class DetailScreen extends React.Component {
     const { navigation } = this.props;
     const itemId = navigation.getParam('itemId', 'NO-ID');
     const otherParam = navigation.getParam('otherParam', 'some default value');
+
+    /*==========Console logging in terminal how JSON.stringify works==========*/
+    // console.log("navigation is: ");
+    // console.log(navigation);
+    // console.log("===================================\n");
+    // console.log("After stringifying");
+    // console.log(JSON.stringify(navigation));
 
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>

@@ -6,6 +6,6 @@ import NavigationStack from './App/components/stacks/NavigationStack';
 
 export default class App extends React.Component {
   render() {
-    return <NavigationStack />;
+      return <NavigationStack />;
   }
 }
