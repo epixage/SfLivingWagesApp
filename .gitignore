@@ -5,6 +5,7 @@ npm-debug.*
 *.p12
 *.key
 *.mobileprovision
+temp.txt
 
 # IDE for android studio
 .idea/*
