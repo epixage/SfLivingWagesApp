@@ -9,3 +9,7 @@ temp.txt
 
 # IDE for android studio
 .idea/*
+yarn.lock
+
+#tester folder to ignore
+ignore

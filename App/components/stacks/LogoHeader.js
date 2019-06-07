@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Image } from 'react-native';
 import { bannerStyle } from '../style/styleSheet'
+
 export default class LogoHeader extends Component {
 	render() {
 		return (

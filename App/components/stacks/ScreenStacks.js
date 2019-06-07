@@ -12,6 +12,9 @@ import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 // Pages/Screens
 import HomeScreen from '../screens/HomeScreen';
 import DetailScreen from '../screens/DetailScreen';
+import EventsScreen from '../screens/EventsScreen';
+
+// Styled Components
 import LogoHeader from './LogoHeader';
 import NavigationDrawerStructure from './NavigationDrawerStructure';
 
@@ -41,6 +44,17 @@ export const HomeStack = createStackNavigator(
 export const DetailsStack = createStackNavigator(
 	{
 		Details: DetailScreen,
+	},
+	{
+		defaultNavigationOptions: header,
+		headerLayoutPreset: 'center'
+	}
+);
+
+// Stack Screen for Events
+export const EventsStack = createStackNavigator(
+	{
+		Events: EventsScreen,
 	},
 	{
 		defaultNavigationOptions: header,

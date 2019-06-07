@@ -6,7 +6,12 @@ import {
 } from 'react-navigation';
 
 // Stack Navigators to Screen
-import { HomeStack, DetailsStack, header } from './ScreenStacks';
+import { 
+	HomeStack, 
+	DetailsStack,
+	EventsStack 
+	header 
+} from './ScreenStacks';
 // import { DrawerNav } from './DrawerStack';
 
 // Vector icon imports
@@ -28,6 +33,8 @@ const navigationIcons = ({navigation}) => ({
         	iconName = 'home';
         } else if(routeName === 'Details') {
         	iconName = 'newspaper';
+        } else if(routeName === 'Events') {
+        	iconName = 'calendar-text';
         }
 
         return (
@@ -62,7 +69,8 @@ const iconColors = {
 export const BottomNavStack = createBottomTabNavigator(
 	{
 		Home: HomeStack,
-		Details: DetailsStack
+		Details: DetailsStack,
+		Events: EventsStack
 	},
 	{
 		defaultNavigationOptions: navigationIcons,
