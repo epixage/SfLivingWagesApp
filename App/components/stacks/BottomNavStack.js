@@ -9,7 +9,7 @@ import {
 import { 
 	HomeStack, 
 	DetailsStack,
-	EventsStack 
+	EventsStack,
 	header 
 } from './ScreenStacks';
 // import { DrawerNav } from './DrawerStack';

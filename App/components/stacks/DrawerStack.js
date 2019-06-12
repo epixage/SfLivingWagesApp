@@ -15,6 +15,7 @@ import {
 	HomeStack, 
 	DetailsStack, 
 	EventsStack,
+	AboutStack,
 	header 
 } from './ScreenStacks';
 import { BottomNavStack } from './BottomNavStack';
@@ -34,6 +35,12 @@ export const DrawerNav = createDrawerNavigator(
 			screen:	HomeStack,
 			navigationOptions: {
 				drawerIcon: <MaterialCommunityIcons name='home' size={20}/>
+			}
+		},
+		About: {
+			screen: AboutStack,
+			navigationOptions: {
+				drawerIcon: <MaterialCommunityIcons name='information-outline' size={20}/>
 			}
 		},
 		Details: {

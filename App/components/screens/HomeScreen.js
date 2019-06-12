@@ -7,13 +7,13 @@ import { styles, bannerStyle } from '../style/styleSheet'
 
 export default class HomeScreen extends React.Component {
   /*=====Change the navigation styling for this page=========*/
-  static navigationOptions = {
-    headerTitle: <LogoHeader/>,
-    headerStyle: bannerStyle.bannerHeaderStyle,
-    headerBackTitle: '',
-    justifyContent: 'center',
-    alignItems: 'center'
-  };
+  // static navigationOptions = {
+  //   headerTitle: <LogoHeader/>,
+  //   headerStyle: bannerStyle.bannerHeaderStyle,
+  //   headerBackTitle: '',
+  //   justifyContent: 'center',
+  //   alignItems: 'center'
+  // };
 
   render() {
     return (
