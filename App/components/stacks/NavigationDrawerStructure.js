@@ -28,16 +28,12 @@ export default class NavigationDrawerStructure extends Component {
   };
 	render() {
    	return (
-   			{
-   				// Using MaterialCommunityIcons and grabbing the menu icon
-   			}
 			<MaterialCommunityIcons
 				name='menu'
 				size={45}
 				color='#fff'
 				style={{
-					flex: 1,
-					width: 40
+					width: 40,
 				}}
 				onPress={ this.toggleDrawer.bind(this) }
 			/>

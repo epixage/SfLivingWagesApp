@@ -1,6 +1,6 @@
 import React from 'react';
 import { Platform, StyleSheet } from 'react-native';
-import LogoHeader from '../stacks/LogoHeader';
+// import LogoHeader from '../stacks/LogoHeader';
 //copy and paste to import the styles to your 
 //import styles from '../style/styleSheet'
 

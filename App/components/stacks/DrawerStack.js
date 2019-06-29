@@ -11,7 +11,13 @@ import {
 import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 
 // Stack Navigators to Screen
-import { HomeStack, DetailsStack, header } from './ScreenStacks';
+import { 
+	HomeStack, 
+	DetailsStack, 
+	EventsStack,
+	AboutStack,
+	header 
+} from './ScreenStacks';
 import { BottomNavStack } from './BottomNavStack';
 
 // creating a DrawerNavigator that contains the BottomTabNavigator and routing to other screens in the Drawer
@@ -31,10 +37,22 @@ export const DrawerNav = createDrawerNavigator(
 				drawerIcon: <MaterialCommunityIcons name='home' size={20}/>
 			}
 		},
+		About: {
+			screen: AboutStack,
+			navigationOptions: {
+				drawerIcon: <MaterialCommunityIcons name='information-outline' size={20}/>
+			}
+		},
 		Details: {
 			screen: DetailsStack,
 			navigationOptions: {
 				drawerIcon: <MaterialCommunityIcons name='newspaper' size={20}/>
+			}
+		},
+		Events: {
+			screen: EventsStack,
+			navigationOptions: {
+				drawerIcon: <MaterialCommunityIcons name='calendar-text' size={20}/>
 			}
 		}
 	},
