@@ -4,9 +4,10 @@ import { Button, View, Text } from 'react-native';
 import { createStackNavigator, createAppContainer } from 'react-navigation';
 
 export default class EventScreen extends React.Component {
-	static navigationOptions = {
-		title: 'Event',
-	};
+	// static navigationOptions = {
+	// 	title: 'Event',
+	// };
+	
 	render() {
 		/*
 			Get param, provide a fallback value

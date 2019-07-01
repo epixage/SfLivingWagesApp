@@ -2,8 +2,7 @@ import React from 'react';
 import { View, WebView, Button, ScrollView, Text } from 'react-native';
 import { createStackNavigator, createAppContainer } from 'react-navigation';
 
-import LogoHeader from '../stacks/LogoHeader';
-import { styles, bannerStyle } from '../style/styleSheet'
+import { styles, bannerStyle } from '../../style/styleSheet'
 
 export default class HomeScreen extends React.Component {
   /*=====Change the navigation styling for this page=========*/
@@ -19,7 +18,7 @@ export default class HomeScreen extends React.Component {
     return (
       <ScrollView style={{ flex: 1}}>
         <View style={{ height: 300 }}>
-          <Text style={{fontSize: 40, fontWeight: 'bolder', textAlign: 'center'}}>News</Text>
+          <Text style={{fontSize: 40, fontWeight: 'bold', textAlign: 'center'}}>News | Media | Events</Text>
           <WebView
             style={{margin: 10, }}
             source={{ uri: 'https://www.youtube.com/embed/yO4JaB1JVb0' }}

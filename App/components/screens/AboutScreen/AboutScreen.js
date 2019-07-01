@@ -4,10 +4,11 @@ import { Button, View, Text } from 'react-native';
 import { createStackNavigator, createAppContainer } from 'react-navigation';
 
 export default class AboutScreen extends React.Component {
-	static navigationOptions = {
-		title: 'About',
-		headerBackTitle: ''
-	};
+	// static navigationOptions = {
+	// 	title: 'About',
+	// 	headerBackTitle: ''
+	// };
+	
 	render() {
 		/*
 			Get param, provide a fallback value

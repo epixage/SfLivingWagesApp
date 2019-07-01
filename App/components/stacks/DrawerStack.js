@@ -14,8 +14,9 @@ import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 import { 
 	HomeStack, 
 	DetailsStack, 
-	EventsStack,
 	AboutStack,
+	InfoStack,
+	DonateStack,
 	header 
 } from './ScreenStacks';
 import { BottomNavStack } from './BottomNavStack';
@@ -34,27 +35,35 @@ export const DrawerNav = createDrawerNavigator(
 		Home: {
 			screen:	HomeStack,
 			navigationOptions: {
-				drawerIcon: <MaterialCommunityIcons name='home' size={20}/>
+				drawerIcon: <MaterialCommunityIcons name='cat' size={20}/>
 			}
 		},
 		About: {
 			screen: AboutStack,
 			navigationOptions: {
-				drawerIcon: <MaterialCommunityIcons name='information-outline' size={20}/>
+				drawerIcon: <MaterialCommunityIcons name='rabbit' size={20}/>
 			}
 		},
 		Details: {
 			screen: DetailsStack,
 			navigationOptions: {
-				drawerIcon: <MaterialCommunityIcons name='newspaper' size={20}/>
+				drawerLabel: 'Join The Fight',
+				drawerIcon: <MaterialCommunityIcons name='dog' size={20}/>
 			}
 		},
-		Events: {
-			screen: EventsStack,
+		Info: {
+			screen: InfoStack,
 			navigationOptions: {
-				drawerIcon: <MaterialCommunityIcons name='calendar-text' size={20}/>
+				drawerLabel: 'Our Campaign',
+				drawerIcon: <MaterialCommunityIcons name='information-outline' size={20}/>
 			}
-		}
+		},
+		Donate: {
+			screen: DonateStack,
+			navigationOptions: {
+				drawerIcon: <MaterialCommunityIcons name='cash' size={20}/>
+			}
+		},
 	},
 	{
 		defaultNavigationOptions: header,

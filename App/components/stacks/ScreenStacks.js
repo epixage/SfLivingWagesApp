@@ -10,17 +10,19 @@ import {
 import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 
 // Pages/Screens
-import HomeScreen from '../screens/HomeScreen';
-import DetailScreen from '../screens/DetailScreen';
-import EventsScreen from '../screens/EventsScreen';
-import AboutScreen from '../screens/AboutScreen';
+import HomeScreen from '../screens/HomeScreen/HomeScreen';
+import EventsScreen from '../screens/HomeScreen/EventsScreen';
+import JoinTheFightScreen from '../screens/JoinTheFightScreen/JoinTheFightScreen';
+import AboutScreen from '../screens/AboutScreen/AboutScreen';
+import InfoScreen from '../screens/InfoScreen/InfoScreen';
+import DonateScreen from '../screens/DonateScreen/DonateScreen';
 
 // Styled Components
 import LogoHeader from './LogoHeader';
 import NavigationDrawerStructure from './NavigationDrawerStructure';
 
 // StyleSheets
-import { styles, bannerStyle } from '../style/styleSheet'
+import { styles, bannerStyle } from '../style/styleSheet';
 
 // header bar
 export const header = ({navigation}) => ({
@@ -29,10 +31,11 @@ export const header = ({navigation}) => ({
 	headerLeft: <NavigationDrawerStructure navigationProps={navigation}/>
 });
 
-// Stack Screen for Home
+// Stack Screen for Home, News, Medias, Events
 export const HomeStack = createStackNavigator(
 	{
 		Home: HomeScreen,
+		Event: EventsScreen
 	},
 	{
 		defaultNavigationOptions: header,
@@ -40,10 +43,10 @@ export const HomeStack = createStackNavigator(
 	}
 );
 
-// Stack Screen for Details
+// Stack Screen for Join the Fight internships volunteer
 export const DetailsStack = createStackNavigator(
 	{
-		Details: DetailScreen,
+		Details: JoinTheFightScreen,
 	},
 	{
 		defaultNavigationOptions: header,
@@ -51,21 +54,32 @@ export const DetailsStack = createStackNavigator(
 	}
 );
 
-// Stack Screen for Events
-export const EventsStack = createStackNavigator(
-	{
-		Events: EventsScreen,
-	},
-	{
-		defaultNavigationOptions: header,
-		headerLayoutPreset: 'center'
-	}
-);
-
-// Stack Screen for About
+// Stack Screen for About Us
 export const AboutStack = createStackNavigator(
 	{
 		About: AboutScreen
+	},
+	{
+		defaultNavigationOptions: header,
+		headerLayoutPreset: 'center'
+	}
+);
+
+// Stack Screen for Information on Campaign
+export const InfoStack = createStackNavigator(
+	{
+		Info: InfoScreen
+	},
+	{
+		defaultNavigationOptions: header,
+		headerLayoutPreset: 'center'
+	}
+);
+
+// Stack Screen for Donation
+export const DonateStack = createStackNavigator(
+	{
+		Donate: DonateScreen
 	},
 	{
 		defaultNavigationOptions: header,
