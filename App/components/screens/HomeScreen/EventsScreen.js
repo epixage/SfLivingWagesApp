@@ -1,7 +1,8 @@
 //Import Necessary Packages
 import React from 'react';
-import { Button, View, Text } from 'react-native';
-import { createStackNavigator, createAppContainer } from 'react-navigation';
+import { Button, View, Text, ScrollView } from 'react-native';
+
+import HomeNavComponent from './HomeNavComponent';
 
 export default class EventScreen extends React.Component {
 	// static navigationOptions = {
@@ -13,9 +14,19 @@ export default class EventScreen extends React.Component {
 			Get param, provide a fallback value
 		*/
 		return(
-			<View style = {{ flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-				<Text>Event page</Text>
-			</View>
+			<ScrollView style={{flex: 1}}>
+				{/*Home Navigation Bar*/}
+				<HomeNavComponent
+					navigate={this.props.navigation.navigate}
+					destination='Event'
+				/>
+				{/*Page Contents*/}
+				<View style={{justifyContent: 'center', alignItems: 'center'}}>
+					<Text style={{textAlign: 'center'}}>
+						Event Page
+					</Text>
+				</View>
+			</ScrollView>
 		);
 	}
 }

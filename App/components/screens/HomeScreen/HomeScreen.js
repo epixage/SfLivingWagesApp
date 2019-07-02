@@ -1,8 +1,7 @@
 import React from 'react';
-import { View, WebView, Button, ScrollView, Text } from 'react-native';
-import { createStackNavigator, createAppContainer } from 'react-navigation';
-
-import { styles, bannerStyle } from '../../style/styleSheet'
+import { View, WebView, Button, ScrollView, Text, StyleSheet } from 'react-native';
+// import { styles, bannerStyle } from '../../style/styleSheet'
+import HomeNavComponent from './HomeNavComponent';
 
 export default class HomeScreen extends React.Component {
   /*=====Change the navigation styling for this page=========*/
@@ -17,8 +16,13 @@ export default class HomeScreen extends React.Component {
   render() {
     return (
       <ScrollView style={{ flex: 1}}>
+      {/*Home Page Navigation part*/}
+      <HomeNavComponent
+        navigate={this.props.navigation.navigate}
+        destination='Event'
+      />
+      {/*Start of the Home Page Contents*/}
         <View style={{ height: 300 }}>
-          <Text style={{fontSize: 40, fontWeight: 'bold', textAlign: 'center'}}>News | Media | Events</Text>
           <WebView
             style={{margin: 10, }}
             source={{ uri: 'https://www.youtube.com/embed/yO4JaB1JVb0' }}
