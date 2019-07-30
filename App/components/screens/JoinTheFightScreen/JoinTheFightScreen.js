@@ -3,12 +3,12 @@ import React from 'react';
 import { Button, View, Text, ScrollableView } from 'react-native';
 import { createStackNavigator, createAppContainer } from 'react-navigation';
 
-export default class DetailScreen extends React.Component {
+export default class JoinTheFightScreen extends React.Component {
 	/*=====Change the navigation styling for this page=========*/
-  static navigationOptions = {
-    title: 'Details',
-    headerBackTitle: ''
-  };
+  // static navigationOptions = {
+  //   title: 'Details',
+  //   headerBackTitle: ''
+  // };
 
   render() {
     /*==========Console logging in terminal how JSON.stringify works==========*/
@@ -20,7 +20,7 @@ export default class DetailScreen extends React.Component {
 
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text>Details Screen</Text>
+        <Text>Join the Fight Screen</Text>
       </View>
     );
   }

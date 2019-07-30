@@ -9,7 +9,9 @@ import {
 import { 
 	HomeStack, 
 	DetailsStack,
-	EventsStack,
+	AboutStack,
+        InfoStack,
+        DonateStack,
 	header 
 } from './ScreenStacks';
 // import { DrawerNav } from './DrawerStack';
@@ -29,12 +31,32 @@ const navigationIcons = ({navigation}) => ({
         	to see which name of the icon you want to use
         	pay attention to which icon library it is using.
         */
-        if(routeName === 'Home') {
-        	iconName = 'home';
-        } else if(routeName === 'Details') {
-        	iconName = 'newspaper';
-        } else if(routeName === 'Events') {
-        	iconName = 'calendar-text';
+        // if(routeName === 'Home') {
+        // 	iconName = 'home';
+        // } else if(routeName === 'Details') {
+        // 	iconName = 'newspaper';
+        // } else if(routeName === 'About') {
+        // 	iconName = 'information-outline';
+        // } 
+
+        switch(routeName) {
+        	case 'Home':
+        		iconName = 'cat';
+        		break;
+        	case 'Details':
+        		//Join the fight page
+        		iconName = 'dog';
+        		break;
+        	case 'Info':
+        		iconName = 'information-outline';
+        		break;
+        	case 'Donate':
+        		iconName = 'cash';
+        		break;
+        	case 'About':
+        		//About Us Page
+        		iconName = 'rabbit';
+        		break;
         }
 
         return (
@@ -70,7 +92,10 @@ export const BottomNavStack = createBottomTabNavigator(
 	{
 		Home: HomeStack,
 		Details: DetailsStack,
-		Events: EventsStack
+		About: AboutStack,
+                Info: InfoStack,
+                Donate: DonateStack
+
 	},
 	{
 		defaultNavigationOptions: navigationIcons,
